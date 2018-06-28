@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Mapping Delhi</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='dh_template_shreya.js'></script>
+    <link href='dh_template_shreya.css' rel='stylesheet' />
+</head>
+<body>
+
+
+
+<!-- DO NOT TOUCH!-->
+<div id='map'></div>
+
+<!-- INFOBOX - Comment out to delete -->
+<div class='map-overlay' id='infobox'><h3>Infobox</h3><div id='pd'><p>Hover over a point </p>  </div></div>
+
+<!-- LEGEND - Comment out to delete -->
+<div class='map-overlay' id='legend'><h3>Legend</h3></div>
+
+<!-- TOGGLE MENU - Comment out to delete -->
+<nav id="menu"></nav>
+
+
+<!--TIMELINE SLIDER - Comment out to delete -->
+<!-- <div id='console'>
+  <h3>Timeline for Dates</h3>
+  <p>add some more text here</p>
+  <div class='session1' id='sliderbar'>
+  <h5>Year: <label id='active-hour'>1526</label></h5>
+  <input id='slider2' class='row' type='range' min='1500' max='2017' step='1' value='1500' />
+</div>
+</div> -->
+<!--END TIMELINE SLIDER: DO NOT COMMENT BEYOND THIS POINT-->
+
+
+<!--OPACITY SLIDER - COMMENT OUT TO DELETE-->
+<!-- <div class='map-overlay2 top'>
+    <div class='map-overlay-inner'>
+        <label><h3>Layer opacity: <span id='slider-value'>100%</span></h3></label>
+        <input id='slider1' type='range' min='0' max='100' step='0' value='100' />
+    </div>
+</div> -->
+<!--OPACITY SLIDER END: DO NOT COMMENT BEYOND THIS POINT-->
+
+
+SLIDESHOW - DO NOT COMMENT OUT
+This is where you add all your text
+<div id='features'>
+    <section id='part-1' class='active'>
+        <h3>Thick Mapping: City Improbable: Writings on Delhi by Khushwant Singh</h3>
+        <p>Area Mentioned in 38 stories of City Improbable </p>
+      </section>
+        <section id='part-2'>
+            <h3>About This Map</h3>
+
+            <p>This Map shows the areas mentioned by Muslim and Hindu writers pre-partition and post-partition across stories from the novel, City Improbable:Writings on Delhi by Khushwant Singh. The data has been refined to show only areas that are less than 5.5 SqKm across 38 stories from the book. You can use the toggle switches to see which areas are mentioned by Hindu and Muslim writers before and after the partition of India. In order to view the areas mentioned by writers of different religions across different time periods (before partition and after partition) you must toggle in the switches provided on the left of the map. The red points further show the major mosques in Delhi and the blue points show the major mosques in Delhi. This map uses important temples and mosques around Delhi to analyze/question if there is a segregation of the city along religious lines.
+ </p>
+        </section>
+        <section id='part-3'>
+            <h3>Muslim and Hindu Areas Mentioned Pre-partition</h3>
+
+            <p>For this view, we can start with HinduAreaPrePart and MuslimAreaPrePart. Once you have toggled these two switches, you can note that the areas are mainly around Old Delhi/North Delhi with a small chunk of area mentioned by Hindu writers in Lal Quan, south of Delhi. You can hover over any area to see its name in the information box.
+        </p>
+        </section>
+        <section id='part-4'>
+            <h3>Muslim and Hindu Areas Mentioned Post-partition of India</h3>
+
+            <p>This view gives a closer view of the action that is happening in the heart of the city. At this point, toggle out HinduAreaPrePart and MuslimAreaPrePart and toggle in HinduAreaPostPart and MuslimAreaPostPart. One can notice that while Muslim writers continue to mention areas in Old Delhi and a small area in central Delhi, Diplomatic enclave. However, Hindu writers mention places spread across the city of Delhi, post-parition. The areas also are mainly spread out in South Delhi.
+        </p>
+        </section>
+        <section id='part-5'>
+            <h3>Muslim Areas Concentrated in Old Delhi</h3>
+
+            <p>This view provides a zoomed in view of the action taking place in Old Delhi. At this point toggle in MuslimAreaPrePart and HinduAreaPrePart as well. Now you have all your four toggle switches on. You can note that areas mentioned in Old Delhi mainly consist of Hindu writers writing before parition and Muslim writers writing both pre and post parition. Old Delhi becomes the hub that Muslim authors choose to focus on in their stories. It can also be derived from the map that Hindu writers write more of areas in South Delhi, after partition.</p>
+            <!-- <img src="http://m.memegen.com/h2p1vx.jpg" width=95%> -->
+        </section>
+        <section id='part-6'>
+            <h3>Analysis</h3>
+
+            <p>In a book by Ghazala Jamil, <i>Accumulation by Segregation: Muslim Localities in Delhi</i>, Jamil investigates the major muslim localities in Delhi– Old Delhi and other parts of Shahjahanabad, trans-Yamuna Muslim areas in the north-east; Jamia Nagar, and, Nizamuddin. In an article for <i>The Wire</i>, Mohammad Sajjad (professor at Aligarh Muslim University and author of <i>Muslim Politics in Bihar: Changing Contours</i>), explains–"The major, if not only, landmarks of Muslim re-settlements in Delhi are: ‘San Sentalis’ (literally 'the year ’47' or Partition), the Emergency of June 1975, and in the 1990s when craftspeople of whom Muslims form a disproportionately large share, began to lose their relevance with industrialisation under a liberalised economy. With the advent of the Hindutva movement, when pogroms became more frequent, such localities began to swell and became more pronounced, with their class heterogeneities.” His quote further provides insight into the cities’ concentration of Muslim populations in only certain areas, that also happen to be poorer areas of the city.
+An external map provided by NCAER 2002., further shows that affluent areas are concentrated in South Delhi whereas low-income areas are in the Old part of the city, up north.
+<br>
+<br>
+An external map provided by NCAER 2002., further shows that affluent areas are concentrated in South Delhi whereas low-income areas are in the Old part of the city, up north.
+<br>
+<img src="https://www.researchgate.net/profile/Isa_Baud/publication/248974192/figure/fig4/AS:393250939654153@1470769738477/Income-differences-by-electoral-wards-in-the-Delhi-Municipal-Corporation-area-Source.ppm" width="95%">
+<br>
+<br>
+The marginalization of communities can often be understood by analyzing the geographical space that they inhabit. This map simply works on that logic and tries to ask several questions about the accumulation of Muslim-mentioned-areas in Old Delhi after partition. Is it simply nostalgia for a lost past? Does it speak about the larger issue of segregation that divides the city? Does it also provide insight into the economic status of majority of the Muslim population in Delhi?
+<br>
+<br>
+Link to the Wire article: <a href="https://thewire.in/books/ghazla-jamil-segregation-muslims-delhi-localities"> Challenging the Impression That Muslims Are Practicing Self-Segregation in Delhi's Localities </a>
+</p>
+        </section>
+        <section id='part-7'>
+            <h3>Conclusion</h3>
+
+            <p>IThis map might hint towards the segregation of the city on religious lines, post-partition, where the dominant community is more spread out and can occupy richer areas, whereas poorer/marginalized communities are concentrated in one area. However, that would simply be a poor assumption to make because of the lack of data. This project has used a very limited set of data and a lot of communities were also assumed (as we didn’t know if the author actually identified with that community). Hence, in order to answer some of the questions posed above, it is important to work with a larger data set. It is also because of these reasons I can make no conclusions from this single map.
+</p>
+    </section>
+</div>
+
+</body>
+</html>
